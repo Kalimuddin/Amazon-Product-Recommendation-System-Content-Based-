@@ -58,4 +58,11 @@
 - for every title we build a weighted vector representation
 -
 - Weighted similarity using brand and color : def idf_w2v_brand(doc_id, w1, w2, num_results):
+- Recommendations using CNN :
+
+![6](https://user-images.githubusercontent.com/54996809/154861344-e22370f1-2cd8-4314-b057-2f0e221157b3.png)
+
+![7](https://user-images.githubusercontent.com/54996809/154861358-1b34000a-aba8-4d3c-9297-959b42aae51e.png)
+
+
 
