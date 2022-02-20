@@ -56,8 +56,9 @@
 
 - TF-IDF weighted Word2Vec : def weighted_w2v_model(doc_id, num_results):
 - for every title we build a weighted vector representation
--
 - Weighted similarity using brand and color : def idf_w2v_brand(doc_id, w1, w2, num_results):
+
+
 - Recommendations using CNN :
 
 ![6](https://user-images.githubusercontent.com/54996809/154861344-e22370f1-2cd8-4314-b057-2f0e221157b3.png)
