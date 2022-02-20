@@ -52,18 +52,10 @@
 
 ![4](https://user-images.githubusercontent.com/54996809/154861060-3e166a1d-8e3a-49a2-86a6-c184a3c65352.png)
 
+![5](https://user-images.githubusercontent.com/54996809/154861182-79887ade-1aba-4623-83ab-2ea3cf0150cb.png)
+
 - TF-IDF weighted Word2Vec : def weighted_w2v_model(doc_id, num_results):
 - for every title we build a weighted vector representation
 -
 - Weighted similarity using brand and color : def idf_w2v_brand(doc_id, w1, w2, num_results):
-
-
-
-
-
-
-
-
-
-
 
