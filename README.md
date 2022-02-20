@@ -31,18 +31,8 @@
 
 ## Modelling :
 - Bag of Words :- bag_of_words_model(doc_id, num_results), call the bag-of-words model for a product to get similar products.
-    - text based product similarity : Converting text to an n-D vector: (bag of words)
-    - Bag of Words (BoW) on product titles
-    - title_features.get_shape() = #data_points * #words_in_corpus, (16042, 12609)
-    - Here, for each title there are 12609 columns, but in actual each titles have very less number of words, most of the column value are zero
-    - we are doing BOW and euiclidean distance :-
-    - if the words are more similar in titles, then euiclidean distance will be low :-
-    - This BOW is not the best solution, but it is one of them solution
-- 
 - TF-IDF: featurizing text based on word-importance, def tfidf_model(doc_id, num_results):
--
 - IDF: based product similarity, If title is not very big, def idf_model(doc_id, num_results):
--
 - Till now we tried three techniques :- TF-idf > idf > BOW  (in terms of better output)
 
 - Output look like this :
@@ -50,6 +40,30 @@
 ![2](https://user-images.githubusercontent.com/54996809/154860790-5b1900f4-18c1-46b0-ba84-da338fd5be4b.png)
 
 ![3](https://user-images.githubusercontent.com/54996809/154860795-ba6c6379-27f3-4634-b3c8-4c7abfbff256.png)
+
+
+- Word2Vec : (featurizing text based on semantic similarity) : 
+- word2vec  requires very large data corpus to work well
+- we take small sample :- those word which are in our titles
+- def avg_w2v_model(doc_id, num_results):
+- 
+- Some output was not available in BOW & tf-idf because they treated 'tiger' and 'tigers' different words
+- Word2wVec gives semantics similarity (many animals print type shirt), which is not given by BOW and TfIdf
+
+![4](https://user-images.githubusercontent.com/54996809/154861060-3e166a1d-8e3a-49a2-86a6-c184a3c65352.png)
+
+- TF-IDF weighted Word2Vec : def weighted_w2v_model(doc_id, num_results):
+- for every title we build a weighted vector representation
+-
+- Weighted similarity using brand and color : def idf_w2v_brand(doc_id, w1, w2, num_results):
+
+
+
+
+
+
+
+
 
 
 
