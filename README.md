@@ -1,4 +1,4 @@
-# Amazon-fashion-discovery-engine-Content-Based-recommendation :
+# E-commerce Product Recommendation System (Content Based) :
 
 ## Problem Definition and Data Requirements :
 - Main Objective is to recommend similar products in e-commerce using product content (ASIN, title, brand, color, images, type of the product, price, etc).
